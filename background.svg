@@ -67,28 +67,28 @@
   <circle cx="2304" cy="144" r="500" fill="url(#glowTopRight)"/>
   <circle cx="256" cy="1296" r="450" fill="url(#glowBottomLeft)"/>
   
-  <!-- Wave Layer 1 - Right side curve (most pronounced) -->
-  <path d="M 2560 0 Q 2400 150 2200 300 T 1800 500 Q 1600 550 1400 600 T 1000 650 Q 800 670 600 680 T 200 690 Q 100 695 0 690 L 0 1440 L 2560 1440 Z" 
-        fill="url(#wave1)" 
-        opacity="0.5"
+    <!-- Wave Layer 1 - Right side curve (most pronounced) -->
+  <path d="M 2560 0 Q 2400 150 2200 300 T 1800 500 Q 1600 550 1400 600 T 1000 650 Q 800 670 600 680 T 200 690 Q 100 695 0 690 L 0 1440 L 2560 1440 Z"
+        fill="url(#wave1)"
+        opacity="0.8"
         filter="url(#softBlur)"/>
-  
+
   <!-- Wave Layer 2 - Secondary right curve -->
-  <path d="M 2560 100 Q 2450 200 2300 350 T 2000 550 Q 1800 600 1600 650 T 1200 700 Q 1000 720 800 730 T 300 740 Q 150 745 0 740 L 0 1440 L 2560 1440 Z" 
-        fill="url(#wave2)" 
-        opacity="0.4"
+  <path d="M 2560 100 Q 2450 200 2300 350 T 2000 550 Q 1800 600 1600 650 T 1200 700 Q 1000 720 800 730 T 300 740 Q 150 745 0 740 L 0 1440 L 2560 1440 Z"
+        fill="url(#wave2)"
+        opacity="0.7"
         filter="url(#softBlur)"/>
-  
+
   <!-- Wave Layer 3 - Bottom-left curve -->
-  <path d="M 0 1440 Q 400 1200 800 1050 T 1600 850 Q 1800 800 2000 750 T 2400 650 Q 2500 600 2560 550 L 2560 0 L 0 0 Z" 
-        fill="url(#wave3)" 
-        opacity="0.35"
+  <path d="M 0 1440 Q 400 1200 800 1050 T 1600 850 Q 1800 800 2000 750 T 2400 650 Q 2500 600 2560 550 L 2560 0 L 0 0 Z"
+        fill="url(#wave3)"
+        opacity="0.6"
         filter="url(#softBlur)"/>
-  
+
   <!-- Wave Layer 4 - Additional subtle layer -->
-  <path d="M 2560 300 Q 2450 400 2300 500 T 2000 650 Q 1800 700 1600 750 T 1200 800 Q 1000 820 800 830 T 400 840 Q 200 845 0 840 L 0 1440 L 2560 1440 Z" 
-        fill="url(#wave4)" 
-        opacity="0.3"
+  <path d="M 2560 300 Q 2450 400 2300 500 T 2000 650 Q 1800 700 1600 750 T 1200 800 Q 1000 820 800 830 T 400 840 Q 200 845 0 840 L 0 1440 L 2560 1440 Z"
+        fill="url(#wave4)"
+        opacity="0.55"
         filter="url(#softBlur)"/>
   
   <!-- Center highlight - keeps middle 60% almost plain ivory -->
@@ -96,6 +96,6 @@
            fill="url(#centerHighlight)" 
            filter="url(#softBlur)"/>
   
-  <!-- Subtle noise texture overlay -->
-  <rect width="2560" height="1440" fill="#FAFAFB" opacity="0.3" filter="url(#noise)"/>
+    <!-- Subtle noise texture overlay -->
+  <rect width="2560" height="1440" fill="#FAFAFB" opacity="0.4" filter="url(#noise)"/>
 </svg>

@@ -206,6 +206,46 @@ function showMessage(element, message, type) {
   }
 }
 
+// Service Tabs Functionality
+const tabButtons = document.querySelectorAll('.tab-btn');
+const serviceContents = document.querySelectorAll('.service-content');
+
+function switchServiceTab(tabId) {
+  // Remove active class from all tabs
+  tabButtons.forEach(btn => btn.classList.remove('active'));
+  // Add active class to clicked tab
+  const activeTab = document.querySelector(`[data-tab="${tabId}"]`);
+  if (activeTab) {
+    activeTab.classList.add('active');
+  }
+
+  // Hide all service contents
+  serviceContents.forEach(content => content.classList.remove('active'));
+  // Show selected service content
+  const targetContent = document.getElementById(tabId + '-content');
+  if (targetContent) {
+    targetContent.classList.add('active');
+  }
+}
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const tabId = button.dataset.tab;
+    switchServiceTab(tabId);
+  });
+});
+
+// Initialize first tab as active
+document.addEventListener('DOMContentLoaded', () => {
+  if (tabButtons.length > 0 && serviceContents.length > 0) {
+    const firstTab = tabButtons[0];
+    const firstTabId = firstTab.dataset.tab;
+    switchServiceTab(firstTabId);
+  }
+});
+
+// FAQ is now a simple grid - no accordion needed
+
 // Card hover effects (if needed)
 document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', function() {
@@ -214,5 +254,38 @@ document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseleave', function() {
     this.style.transform = 'translateY(0)';
   });
+});
+
+// Enhanced package card interactions
+document.querySelectorAll('.package-card, .plan-card').forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-4px)';
+  });
+  card.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0)';
+  });
+});
+
+// Timeline step animations
+const timelineSteps = document.querySelectorAll('.timeline-step');
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const timelineObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
+timelineSteps.forEach(step => {
+  step.style.opacity = '0';
+  step.style.transform = 'translateY(20px)';
+  step.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  timelineObserver.observe(step);
 });
 

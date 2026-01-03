@@ -1,23 +1,27 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services | Dedicated Pods, Build & Launch, Maintenance | Haegeum</title>
-  <meta name="description" content="Choose the right engagement model: Dedicated Engineering Pods, Build & Launch projects, or Run & Improve maintenance. US/UK/Canada time zones. Get a quote." />
-  
+  <meta name="description"
+    content="Choose the right engagement model: Dedicated Engineering Pods, Build & Launch projects, or Run & Improve maintenance. US/UK/Canada time zones. Get a quote." />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://haegeum.in/services" />
   <meta property="og:title" content="Services | Haegeum" />
-  <meta property="og:description" content="Dedicated Engineering Pods, Build & Launch projects, and Run & Improve maintenance for web & mobile applications." />
-  
+  <meta property="og:description"
+    content="Dedicated Engineering Pods, Build & Launch projects, and Run & Improve maintenance for web & mobile applications." />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <nav class="nav">
     <div class="nav-wrap">
-      <a href="index.html" class="nav-logo">HAEGEUM</a>
+      <a href="index.html"><img src="HaegeumLogo.webp" alt="Haegeum" class="nav-logo-img"></a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html" class="active">Services</a>
@@ -36,274 +40,224 @@
     <!-- Page Hero -->
     <header class="page-hero">
       <h1>Services</h1>
-      <p class="sub">Choose the model that fits your stage—staffing, project delivery, or ongoing maintenance.</p>
+      <p class="sub">Choose the engagement model that fits your stage—staffing, project delivery, or ongoing maintenance.</p>
     </header>
 
-    <!-- Service 1: Pods -->
-    <section class="service-section" id="pods">
-      <h2>Haegeum Pods (Dedicated Staffing)</h2>
-      
-      <div class="service-content">
-        <div class="service-block">
-          <h3>What it is</h3>
-          <p>A dedicated engineering pod that plugs into your team and delivers weekly progress.</p>
+    <!-- Service Selector Tabs -->
+    <section class="service-tabs-section">
+      <div class="service-tabs">
+        <button class="tab-btn active" data-tab="pods">
+          <span class="tab-number">01</span>
+          <div class="tab-info">
+            <h3>Haegeum Pods</h3>
+            <p>Dedicated Capacity</p>
+          </div>
+        </button>
+        <button class="tab-btn" data-tab="build">
+          <span class="tab-number">02</span>
+          <div class="tab-info">
+            <h3>Build & Launch</h3>
+            <p>Project Delivery</p>
+          </div>
+        </button>
+        <button class="tab-btn" data-tab="maintain">
+          <span class="tab-number">03</span>
+          <div class="tab-info">
+            <h3>Run & Improve</h3>
+            <p>Ongoing Support</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+      <!-- Service Content for Pods -->
+      <div class="service-content active" id="pods-content">
+        <div class="service-header">
+          <span class="service-badge">Most Popular</span>
+          <h2>Haegeum Pods</h2>
+          <p>Dedicated engineering pod that integrates into your team for consistent weekly progress.</p>
         </div>
 
-        <div class="service-block">
-          <h3>Best for</h3>
-          <ul>
-            <li>Teams with a backlog that need execution speed</li>
-            <li>Startups that want reliable delivery without hiring</li>
-            <li>Agencies needing a white-label development partner</li>
-          </ul>
+        <div class="service-features">
+          <div class="feature-row">
+            <strong>Perfect For:</strong> Teams with backlogs, startups needing delivery, agencies requiring white-label
+            partners
+          </div>
+          <div class="feature-row">
+            <strong>You Get:</strong> Full-stack capacity, weekly planning & demos, PR-based development, clean
+            architecture
+          </div>
+          <div class="feature-row">
+            <strong>How It Works:</strong> You provide priorities, we deliver in weekly cycles with continuous progress
+          </div>
+          <div class="feature-row pricing">
+            <strong>Pricing:</strong> Monthly retainer (capacity-based)
+            <a href="contact.html" class="btn pricing-btn">Book a free 20-minute call</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Content for Build & Launch -->
+      <div class="service-content" id="build-content">
+        <div class="service-header">
+          <span class="service-badge">Project Focused</span>
+          <h2>Build & Launch</h2>
+          <p>Complete web/mobile development from concept to production with clear milestones.</p>
         </div>
 
-        <div class="service-block">
-          <h3>What you get</h3>
-          <ul>
-            <li>Full-stack capacity (Web UI + API + DB)</li>
-            <li>Weekly plan + weekly demo/review</li>
-            <li>PR-based development and code reviews</li>
-            <li>Documentation for key flows and setup</li>
-            <li>Clean architecture and reusable components</li>
-            <li>Basic testing for critical paths</li>
-          </ul>
+        <div class="service-features">
+          <div class="feature-row">
+            <strong>Perfect For:</strong> MVPs, new launches, rebuilds, internal admin portals & workflow tools
+          </div>
+          <div class="feature-row">
+            <strong>Packages:</strong>
+            <span class="packages">
+              <span>MVP Sprint (4–8 weeks): Auth, core workflows, APIs, production-ready v1</span>
+              <span class="featured">Product Build (8–16 weeks): MVP + integrations, performance, enhanced
+                testing</span>
+            </span>
+          </div>
+          <div class="feature-row">
+            <strong>Process:</strong> Discovery → Milestone-based development → Testing & deployment
+          </div>
+          <div class="feature-row pricing">
+            <strong>Pricing:</strong> Fixed-price milestones (optional Paid Discovery)
+            <a href="contact.html" class="btn pricing-btn">Book a free 20-minute call</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Content for Run & Improve -->
+      <div class="service-content" id="maintain-content">
+        <div class="service-header">
+          <span class="service-badge">Ongoing Support</span>
+          <h2>Run & Improve</h2>
+          <p>Ongoing support, stability improvements, and feature development for live products.</p>
         </div>
 
-        <div class="service-block">
-          <h3>How it works</h3>
-          <ul>
-            <li>You provide priorities and feedback</li>
-            <li>We deliver in weekly cycles</li>
-            <li>You see continuous progress through demos and tracked work</li>
-          </ul>
-        </div>
-
-        <div class="service-block">
-          <h3>Pricing model</h3>
-          <p><strong>Monthly retainer (capacity-based)</strong></p>
-          <ul>
-            <li>Pay for a dedicated pod capacity</li>
-            <li>Add-ons available: QA, UI/UX, PM-lite, on-call support</li>
-          </ul>
-          <p class="cta-inline"><a href="contact.html">Contact us for a detailed quote tailored to your needs.</a></p>
+        <div class="service-features">
+          <div class="feature-row">
+            <strong>Perfect For:</strong> Teams needing predictable support, products requiring improvements, apps
+            needing stability
+          </div>
+          <div class="feature-row">
+            <strong>Plans:</strong>
+            <span class="plans">
+              <span>Care Plan: Bug fixes, updates, small enhancements</span>
+              <span class="featured">Growth Plan: Care + monthly feature development</span>
+              <span class="urgent">Rescue Plan: Emergency stabilization</span>
+            </span>
+          </div>
+          <div class="feature-row">
+            <strong>SLA Levels:</strong> Standard (48h), Priority (24h), Critical (4h) response times
+          </div>
+          <div class="feature-row pricing">
+            <strong>Pricing:</strong> Monthly retainer based on volume & SLA level
+            <a href="contact.html" class="btn pricing-btn">Book a free 20-minute call</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 2: Build & Launch -->
-    <section class="service-section" id="build">
-      <h2>Build & Launch (Project Development)</h2>
-      
-      <div class="service-content">
-        <div class="service-block">
-          <h3>What it is</h3>
-          <p>End-to-end development of a web/mobile application from requirements to production.</p>
-        </div>
+    <!-- Compact Comparison Table -->
+    <section class="comparison-section">
+      <div class="section-header">
+        <h2>Quick Comparison</h2>
+        <p>Choose the right model for your needs</p>
+      </div>
 
-        <div class="service-block">
-          <h3>Best for</h3>
-          <ul>
-            <li>MVPs and new product builds</li>
-            <li>Rebuild/modernization of existing apps</li>
-            <li>Internal admin portals and workflow tools</li>
-          </ul>
-        </div>
-
-        <div class="service-block">
-          <h3>Recommended packages</h3>
-          <div class="package">
-            <h4>MVP Sprint (4–8 weeks)</h4>
-            <ul>
-              <li>Auth + roles, core workflows, admin UI</li>
-              <li>APIs + DB schema</li>
-              <li>Production-ready v1 release</li>
-            </ul>
+      <div class="comparison-cards">
+        <div class="comparison-card">
+          <div class="card-header">
+            <span class="card-badge">Most Popular</span>
+            <h3>Pods</h3>
+            <p>Dedicated Capacity</p>
           </div>
-          <div class="package">
-            <h4>Product Build (8–16 weeks)</h4>
-            <ul>
-              <li>MVP + integrations (payments, notifications, external APIs)</li>
-              <li>Performance hardening</li>
-              <li>Improved test coverage</li>
-            </ul>
+          <div class="card-features">
+            <div><strong>Timeline:</strong> Ongoing (monthly)</div>
+            <div><strong>Pricing:</strong> Monthly retainer</div>
+            <div><strong>Best for:</strong> Product teams, backlogs</div>
+            <div><strong>Integration:</strong> Full team integration</div>
           </div>
+          <a href="contact.html" class="btn card-btn">Book a free 20-minute call</a>
         </div>
 
-        <div class="service-block">
-          <h3>Pricing model</h3>
-          <p><strong>Fixed-price milestones</strong></p>
-          <ul>
-            <li>Milestone scope and acceptance criteria defined clearly</li>
-          </ul>
-          <p><strong>Optional:</strong> Paid Discovery (1–2 weeks)</p>
-          <ul>
-            <li>Outputs: scope, backlog, architecture outline, delivery plan</li>
-          </ul>
-          <p class="cta-inline"><a href="contact.html">Contact us for milestone pricing and timeline estimates.</a></p>
+        <div class="comparison-card">
+          <div class="card-header">
+            <h3>Build & Launch</h3>
+            <p>Project Delivery</p>
+          </div>
+          <div class="card-features">
+            <div><strong>Timeline:</strong> 4–16 weeks</div>
+            <div><strong>Pricing:</strong> Fixed milestones</div>
+            <div><strong>Best for:</strong> MVPs, new products</div>
+            <div><strong>Integration:</strong> Project-based</div>
+          </div>
+          <a href="contact.html" class="btn card-btn">Book a free 20-minute call</a>
+        </div>
+
+        <div class="comparison-card">
+          <div class="card-header">
+            <h3>Run & Improve</h3>
+            <p>Ongoing Support</p>
+          </div>
+          <div class="card-features">
+            <div><strong>Timeline:</strong> Ongoing (monthly)</div>
+            <div><strong>Pricing:</strong> Monthly retainer</div>
+            <div><strong>Best for:</strong> Live products</div>
+            <div><strong>Integration:</strong> Support role</div>
+          </div>
+          <a href="contact.html" class="btn card-btn">Book a free 20-minute call</a>
         </div>
       </div>
     </section>
 
-    <!-- Service 3: Run & Improve -->
-    <section class="service-section" id="maintain">
-      <h2>Run & Improve (Maintenance + Enhancements)</h2>
-      
-      <div class="service-content">
-        <div class="service-block">
-          <h3>What it is</h3>
-          <p>Ongoing support, upgrades, stability improvements, and feature enhancements for live products.</p>
-        </div>
 
-        <div class="service-block">
-          <h3>Best for</h3>
-          <ul>
-            <li>Teams who want predictable support</li>
-            <li>Products needing ongoing improvements</li>
-            <li>Apps that must stay stable and secure</li>
-          </ul>
-        </div>
-
-        <div class="service-block">
-          <h3>Plans</h3>
-          <div class="package">
-            <h4>Care Plan (Stability)</h4>
-            <ul>
-              <li>Fixes, upgrades, small changes</li>
-            </ul>
-          </div>
-          <div class="package">
-            <h4>Growth Plan (Stability + Features)</h4>
-            <ul>
-              <li>Stability + continuous feature delivery (monthly capacity)</li>
-            </ul>
-          </div>
-          <div class="package">
-            <h4>Rescue Plan (2–4 weeks)</h4>
-            <ul>
-              <li>Stabilization, performance tuning, refactor hotspots, roadmap</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-block">
-          <h3>Pricing model</h3>
-          <p><strong>Monthly retainer</strong> based on volume, SLA expectations, and complexity.</p>
-          <p class="cta-inline"><a href="contact.html">Contact us to discuss which plan fits your needs.</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Decision Helper -->
-    <section class="decision-helper">
-      <h2>Which service should I choose?</h2>
-      <div class="decision-grid">
-        <div class="decision-item">
-          <h3>Choose Pods</h3>
-          <p>if you have ongoing work and want a dedicated capacity.</p>
-        </div>
-        <div class="decision-item">
-          <h3>Choose Build & Launch</h3>
-          <p>if you need a new product delivered end-to-end.</p>
-        </div>
-        <div class="decision-item">
-          <h3>Choose Run & Improve</h3>
-          <p>if your product is live and needs stability + improvements.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Engagement Models -->
-    <section class="engagement-models">
-      <h2>Engagement models</h2>
-      <div class="model-grid">
-        <div class="model-item">
-          <h3>1) Monthly retainer (capacity-based)</h3>
-          <p>Best for staffing and ongoing maintenance.</p>
-        </div>
-        <div class="model-item">
-          <h3>2) Fixed-price milestones</h3>
-          <p>Best for project builds with clear scope.</p>
-        </div>
-        <div class="model-item">
-          <h3>3) Hybrid (recommended for new clients)</h3>
-          <p>Paid Discovery → Build milestones → Monthly maintenance.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- Compact FAQ -->
     <section class="faq-section">
-      <h2>Services FAQ</h2>
-      
-      <div class="faq-category">
-        <h3>General Questions</h3>
-        <div class="faq-item">
-          <h4>Do you work with US/UK/Canada time zones?</h4>
-          <p>Yes. We agree on overlap hours and run predictable weekly delivery.</p>
-        </div>
-        <div class="faq-item">
-          <h4>What's your typical response time for inquiries?</h4>
-          <p>We aim to respond within 24 hours during business days. For urgent matters, we can arrange a same-day response.</p>
-        </div>
-        <div class="faq-item">
-          <h4>Can you sign an NDA?</h4>
-          <p>Yes. We're happy to sign NDAs to protect your confidential information.</p>
-        </div>
-        <div class="faq-item">
-          <h4>Do you work with existing codebases?</h4>
-          <p>Yes. We can work with your existing codebase, whether it's legacy code that needs modernization or a current project that needs additional capacity.</p>
-        </div>
+      <div class="section-header">
+        <h2>Common Questions</h2>
       </div>
 
-      <div class="faq-category">
-        <h3>Getting Started</h3>
+      <div class="faq-grid">
         <div class="faq-item">
-          <h4>Can you start with a small engagement?</h4>
-          <p>Yes. Many clients start with Paid Discovery or a small MVP sprint. This lets you evaluate our work before committing to a larger engagement.</p>
+          <h4>Can you start small?</h4>
+          <p>Yes! Start with Paid Discovery or MVP sprint, then scale up as needed.</p>
         </div>
         <div class="faq-item">
-          <h4>What's included in Paid Discovery?</h4>
-          <p>Paid Discovery (1–2 weeks) includes: detailed scope definition, prioritized backlog, architecture outline, delivery timeline, risk assessment, and a clear roadmap. It's designed to set up your project for success.</p>
+          <h4>Time zones?</h4>
+          <p>We work US/UK/Canada time zones with 4-6 hour overlap windows.</p>
         </div>
         <div class="faq-item">
-          <h4>What if requirements change?</h4>
-          <p>We handle changes through reprioritization or a change request, so timelines and budgets stay controlled. Scope changes are discussed transparently and documented.</p>
-        </div>
-      </div>
-
-      <div class="faq-category">
-        <h3>Technical & Quality</h3>
-        <div class="faq-item">
-          <h4>Will the code be maintainable?</h4>
-          <p>Yes—maintainability is a core promise. We follow clean structure, standards, and documentation. You'll receive code that's easy to understand, extend, and maintain.</p>
+          <h4>Response time?</h4>
+          <p>24 hours for inquiries, dedicated channels once engaged.</p>
         </div>
         <div class="faq-item">
-          <h4>Do you provide code ownership/IP transfer?</h4>
-          <p>Yes. You retain full ownership of all code and repositories. We transfer all IP rights to you upon project completion.</p>
+          <h4>Existing codebases?</h4>
+          <p>Absolutely. We modernize legacy code and extend current projects.</p>
         </div>
         <div class="faq-item">
-          <h4>What if I need to pause or cancel a retainer?</h4>
-          <p>We understand that business needs change. For monthly retainers, we require 30 days' notice for cancellation. Pauses can be arranged with advance notice.</p>
+          <h4>Code ownership?</h4>
+          <p>You own everything. Full IP transfer upon completion.</p>
         </div>
-      </div>
-
-      <div class="faq-category">
-        <h3>Support & Maintenance</h3>
         <div class="faq-item">
-          <h4>Do you provide ongoing support after launch?</h4>
-          <p>Yes—through our Run & Improve plans. We offer Care Plan (stability), Growth Plan (stability + features), and Rescue Plan (short-term stabilization).</p>
+          <h4>Ongoing support?</h4>
+          <p>Yes, through our Care, Growth, and Rescue maintenance plans.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <h2>Ready to get started?</h2>
-      <p>Contact us to discuss which service fits your needs.</p>
-      <div class="actions">
-        <a class="btn primary" href="contact.html">Book a free 20-minute call</a>
-        <a class="btn" href="contact.html">Get a quote</a>
+    <!-- Final CTA -->
+    <section class="cta-section cta-final" aria-label="Get started">
+      <div class="cta-content">
+        <h2>Ready to Get Started?</h2>
+        <p>Book a free consultation to discuss your project needs and get a custom roadmap.</p>
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Book a free 20-minute call</a>
+          <a class="btn" href="contact.html">Get in touch</a>
+        </div>
       </div>
     </section>
   </main>
@@ -345,5 +299,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
