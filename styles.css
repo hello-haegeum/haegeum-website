@@ -702,6 +702,14 @@
     color:var(--muted);
   }
   
+  /* Honeypot (spam protection) */
+  .honeypot{
+    display:none !important;
+    visibility:hidden;
+    position:absolute;
+    left:-9999px;
+  }
+  
   /* Responsive */
   @media (max-width:840px){
     .nav-links{
@@ -732,5 +740,24 @@
     .tech-grid{grid-template-columns:1fr;}
     .hero{padding:36px 20px;}
     .cta-section{padding:32px 24px;}
+    
+    /* Mobile spacing adjustments */
+    .wrap{
+      padding:40px 20px 28px;
+    }
+    .value-props,
+    .process,
+    .proof,
+    .service-section,
+    .decision-helper,
+    .engagement-models,
+    .faq-section,
+    .content-section,
+    .contact-form-section{
+      margin:40px 0;
+    }
+    .page-hero{
+      margin-bottom:40px;
+    }
   }
   
