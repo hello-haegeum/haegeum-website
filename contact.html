@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Haegeum | Book a Free Consultation</title>
+  <meta name="description" content="Get in touch with Haegeum. Tell us about your project and we'll suggest the best engagement model. Book a free 20-minute call. US/UK/Canada time zones." />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haegeum.in/contact" />
+  <meta property="og:title" content="Contact Haegeum | Book a Free Consultation" />
+  <meta property="og:description" content="Get in touch with Haegeum. Tell us about your project and we'll suggest the best engagement model." />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-logo">HAEGEUM</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <h1>Contact</h1>
+      <p class="sub">Tell us what you're building. We'll reply with the best next step.</p>
+    </header>
+
+    <!-- Calendly Pitch -->
+    <section class="calendly-section">
+      <h2>Prefer a quick call?</h2>
+      <p><a href="#contact-form" class="btn primary">Book a free 20-minute call</a> to discuss scope, timeline, and the best engagement model.</p>
+      <p class="note">You can also fill out the form below and we'll get back to you within 24 hours.</p>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="trust-signals">
+      <h2>Client confidence</h2>
+      <ul class="trust-list">
+        <li>Option to start with a small Paid Discovery</li>
+        <li>Clear change-request process</li>
+        <li>Ownership of code and repos (client retains IP)</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact-form">
+      <h2>Get in touch</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <!-- Basic Info -->
+        <fieldset>
+          <legend>Basic Information</legend>
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error" />
+            <span class="error-message" id="name-error" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error" />
+            <span class="error-message" id="email-error" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">Company / Website</label>
+            <input type="text" id="company" name="company" />
+          </div>
+          <div class="form-group">
+            <label for="timezone">Country / Timezone</label>
+            <input type="text" id="timezone" name="timezone" placeholder="e.g., US EST, UK GMT" />
+          </div>
+        </fieldset>
+
+        <!-- Project Details -->
+        <fieldset>
+          <legend>Project Details</legend>
+          <div class="form-group">
+            <label for="project">What do you want to build? <span class="required">*</span></label>
+            <textarea id="project" name="project" rows="4" required aria-required="true" aria-describedby="project-error"></textarea>
+            <span class="error-message" id="project-error" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="platform">Is it Web, Mobile, or both?</label>
+            <select id="platform" name="platform">
+              <option value="">Select...</option>
+              <option value="web">Web</option>
+              <option value="mobile">Mobile</option>
+              <option value="both">Both</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="service">Do you need staffing, a full build, or maintenance?</label>
+            <select id="service" name="service">
+              <option value="">Select...</option>
+              <option value="staffing">Staffing (Dedicated Pods)</option>
+              <option value="build">Full Build & Launch</option>
+              <option value="maintenance">Maintenance & Enhancements</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Target timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select...</option>
+              <option value="asap">ASAP</option>
+              <option value="1-2months">1–2 months</option>
+              <option value="3+months">3+ months</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget range (optional)</label>
+            <select id="budget" name="budget">
+              <option value="">Select...</option>
+              <option value="under-10k">Under $10k</option>
+              <option value="10k-50k">$10k - $50k</option>
+              <option value="50k-100k">$50k - $100k</option>
+              <option value="100k+">$100k+</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Technical -->
+        <fieldset>
+          <legend>Technical</legend>
+          <div class="form-group">
+            <label for="existing">Existing system?</label>
+            <select id="existing" name="existing">
+              <option value="">Select...</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="techstack">Preferred tech stack (optional)</label>
+            <input type="text" id="techstack" name="techstack" placeholder="e.g., React, Node.js, PostgreSQL" />
+          </div>
+        </fieldset>
+
+        <!-- Privacy & Consent -->
+        <fieldset>
+          <div class="form-group checkbox-group">
+            <label for="privacy">
+              <input type="checkbox" id="privacy" name="privacy" required aria-required="true" aria-describedby="privacy-error" />
+              I agree to be contacted about my project <span class="required">*</span>
+            </label>
+            <span class="error-message" id="privacy-error" role="alert"></span>
+          </div>
+          <p class="privacy-note">By submitting this form, you agree to our privacy practices. <a href="#privacy-policy">Privacy Policy</a></p>
+        </fieldset>
+
+        <!-- Honeypot -->
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit" class="btn primary" id="submitBtn">
+            Book a free 20-minute call
+          </button>
+        </div>
+
+        <!-- Messages -->
+        <div id="formMessages" class="form-messages" role="alert"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Haegeum</h4>
+        <p>A quality-focused engineering studio built for speed, accountability, and maintainability.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#pods">Dedicated Pods</a></li>
+          <li><a href="services.html#build">Build & Launch</a></li>
+          <li><a href="services.html#maintain">Run & Improve</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Trust & Security</h4>
+        <ul class="trust-list">
+          <li>NDA available on request</li>
+          <li>Least-privilege access</li>
+          <li>Client retains IP ownership</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> Haegeum • <a href="https://haegeum.in">haegeum.in</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

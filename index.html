@@ -3,47 +3,191 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Haegeum</title>
-  <meta name="description" content="Haegeum builds and maintains web & mobile apps with clean architecture and fast delivery." />
+  <title>Haegeum | Web & Mobile App Development | Clean Architecture</title>
+  <meta name="description" content="Haegeum helps startups and SMBs build and maintain web & mobile apps with clean architecture and fast delivery. Dedicated pods, MVP builds, and ongoing maintenance." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haegeum.in" />
+  <meta property="og:title" content="Haegeum | Web & Mobile App Development" />
+  <meta property="og:description" content="Build and maintain web & mobile apps with clean architecture and fast delivery. Dedicated pods, MVP builds, ongoing maintenance." />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://haegeum.in" />
+  <meta property="twitter:title" content="Haegeum | Web & Mobile App Development" />
+  <meta property="twitter:description" content="Build and maintain web & mobile apps with clean architecture and fast delivery. Dedicated pods, MVP builds, ongoing maintenance." />
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav class="nav">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-logo">HAEGEUM</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
   <main class="wrap">
+    <!-- Hero Section -->
     <header class="hero">
       <div class="badge">HAEGEUM</div>
-      <h1>Welcome to Haegeum</h1>
+      <h1>Build and run web & mobile applications—fast and maintainable.</h1>
       <p class="sub">
-        Haegeum helps startups and SMBs build and maintain web &amp; mobile apps with clean architecture and fast delivery.
+        Haegeum partners with startups and SMBs in the US/UK/Canada to deliver reliable products through <strong>Dedicated Engineering Pods</strong>, <strong>Build & Launch projects</strong>, and <strong>Maintenance & Enhancements</strong>.
       </p>
-
+      <p class="trust-line">Clean architecture • Predictable delivery • Transparent communication</p>
       <div class="actions">
-        <a class="btn primary" href="mailto:hello@haegeum.in?subject=Project%20Inquiry%20-%20Haegeum">Email us</a>
-        <a class="btn" href="#next">What we do</a>
+        <a class="btn primary" href="contact.html">Book a free 20-minute call</a>
+        <a class="btn" href="services.html">See Services</a>
       </div>
     </header>
 
-    <section id="next" class="cards">
-      <div class="card">
-        <h3>Dedicated Pods</h3>
-        <p>Capacity-based staffing for predictable weekly progress.</p>
+    <!-- Service Cards -->
+    <section class="cards" id="services">
+      <div class="card" onclick="window.location.href='services.html#pods'">
+        <h3>Dedicated Engineering Pods</h3>
+        <p class="card-oneliner">Plug-in engineers who deliver predictable weekly progress.</p>
+        <p class="card-bestfor"><strong>Best for:</strong> Teams with a backlog who need execution speed.</p>
+        <a href="services.html#pods" class="card-link">Explore Pods →</a>
       </div>
-      <div class="card">
-        <h3>Build & Launch</h3>
-        <p>End-to-end MVPs and product builds, delivered in milestones.</p>
+      <div class="card" onclick="window.location.href='services.html#build'">
+        <h3>Build & Launch Projects</h3>
+        <p class="card-oneliner">End-to-end development—from requirements to production.</p>
+        <p class="card-bestfor"><strong>Best for:</strong> MVPs, new products, and rebuilds.</p>
+        <a href="services.html#build" class="card-link">Explore Build & Launch →</a>
       </div>
-      <div class="card">
-        <h3>Run & Improve</h3>
-        <p>Maintenance, upgrades, and enhancements for live products.</p>
+      <div class="card" onclick="window.location.href='services.html#maintain'">
+        <h3>Maintenance & Enhancements</h3>
+        <p class="card-oneliner">Keep your product stable, secure, and improving continuously.</p>
+        <p class="card-bestfor"><strong>Best for:</strong> Live products needing ongoing support.</p>
+        <a href="services.html#maintain" class="card-link">Explore Maintenance →</a>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="y"></span> Haegeum • <a href="https://haegeum.in">haegeum.in</a></p>
-    </footer>
+    <!-- Why Haegeum -->
+    <section class="value-props">
+      <h2>Why Haegeum</h2>
+      <div class="value-grid">
+        <div class="value-item">
+          <h3>1) Predictable cadence and transparency</h3>
+          <p>Weekly planning, weekly demos, and tracked progress. You always know what's done, what's next, and what's blocked.</p>
+        </div>
+        <div class="value-item">
+          <h3>2) Fast delivery with engineering discipline</h3>
+          <p>We use modern AI-assisted workflows to accelerate delivery—while keeping code quality high through reviews, standards, and clean architecture.</p>
+        </div>
+        <div class="value-item">
+          <h3>3) Maintainable and extensible codebase</h3>
+          <p>We build products you can confidently grow. Clear structure, reusable components, and documentation reduce long-term cost.</p>
+        </div>
+        <div class="value-item">
+          <h3>4) End-to-end ownership</h3>
+          <p>Web UI + API + Database delivered together. Fewer handoffs, fewer gaps, smoother releases.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="process">
+      <h2>How we work</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Align</h3>
+          <p>We clarify goals, user roles, scope, and success metrics.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Plan</h3>
+          <p>We create a clear delivery plan (milestones or monthly capacity) and define acceptance criteria.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Build</h3>
+          <p>PR-based development with code reviews and consistent standards.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Demo & Iterate</h3>
+          <p>Weekly demos, feedback, and continuous improvement.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <h3>Launch & Support</h3>
+          <p>Production rollout, monitoring hooks, and ongoing support if needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="proof">
+      <h2>Proof you can trust</h2>
+      <p>Our process ensures you see progress continuously, not just at the end. Here's what you can expect:</p>
+      <ul class="proof-list">
+        <li>Weekly demos and tracked milestones</li>
+        <li>Clean repo structure and documentation</li>
+        <li>Maintainability-first approach</li>
+        <li>Option for paid discovery before full build</li>
+      </ul>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+      <h2>Let's build something reliable.</h2>
+      <p>Share what you're building. We'll suggest the best engagement model and a clear next step.</p>
+      <div class="actions">
+        <a class="btn primary" href="contact.html">Book a free 20-minute call</a>
+        <a class="btn" href="contact.html">Contact us</a>
+      </div>
+    </section>
   </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Haegeum</h4>
+        <p>A quality-focused engineering studio built for speed, accountability, and maintainability.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#pods">Dedicated Pods</a></li>
+          <li><a href="services.html#build">Build & Launch</a></li>
+          <li><a href="services.html#maintain">Run & Improve</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Trust & Security</h4>
+        <ul class="trust-list">
+          <li>NDA available on request</li>
+          <li>Least-privilege access</li>
+          <li>Client retains IP ownership</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> Haegeum • <a href="https://haegeum.in">haegeum.in</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
