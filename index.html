@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav class="nav">
     <div class="nav-wrap">
       <a href="index.html" class="nav-logo">HAEGEUM</a>
@@ -38,7 +39,7 @@
     </div>
   </nav>
 
-  <main class="wrap">
+  <main class="wrap" id="main-content">
     <!-- Hero Section -->
     <header class="hero hero-home">
       <div class="badge">Product Engineering Studio</div>
@@ -58,7 +59,7 @@
     </header>
 
     <!-- Services Section -->
-    <section class="section-services" id="services">
+    <section class="section-services" id="services" aria-label="Our Services">
       <div class="section-header">
         <h2>Our Services</h2>
         <p class="section-intro">Choose the engagement model that fits your stage</p>
@@ -100,8 +101,11 @@
       </div>
     </section>
 
+    <!-- Section Divider -->
+    <hr class="section-divider" aria-hidden="true" />
+
     <!-- Why Haegeum -->
-    <section class="section-values">
+    <section class="section-values" aria-label="Why Haegeum">
       <div class="section-header">
         <h2>Why Haegeum</h2>
         <p class="section-intro">Engineering excellence that scales with your business</p>
@@ -130,8 +134,11 @@
       </div>
     </section>
 
+    <!-- Section Divider -->
+    <hr class="section-divider" aria-hidden="true" />
+
     <!-- How We Work -->
-    <section class="section-process">
+    <section class="section-process" aria-label="How we work">
       <div class="section-header">
         <h2>How we work</h2>
         <p class="section-intro">A proven process for reliable delivery</p>
@@ -165,8 +172,11 @@
       </div>
     </section>
 
+    <!-- Section Divider -->
+    <hr class="section-divider" aria-hidden="true" />
+
     <!-- Social Proof -->
-    <section class="section-proof">
+    <section class="section-proof" aria-label="Proof you can trust">
       <div class="proof-content">
         <h2>Proof you can trust</h2>
         <p class="proof-intro">Our process ensures you see progress continuously, not just at the end. Here's what you can expect:</p>
@@ -203,8 +213,11 @@
       </div>
     </section>
 
+    <!-- Section Divider -->
+    <hr class="section-divider" aria-hidden="true" />
+
     <!-- Final CTA -->
-    <section class="cta-section cta-final">
+    <section class="cta-section cta-final" aria-label="Get started">
       <div class="cta-content">
         <h2>Let's build something reliable.</h2>
         <p>Share what you're building. We'll suggest the best engagement model and a clear next step.</p>
