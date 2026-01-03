@@ -1,0 +1,35 @@
+/* Premium Background Styles for Haegeum */
+
+/* Option 1: Use SVG background image */
+body {
+  background-image: url('background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Option 2: CSS-only gradient alternative (if SVG not preferred) */
+body.css-background {
+  background: 
+    /* Subtle corner glows */
+    radial-gradient(ellipse 800px 800px at 90% 10%, rgba(37,99,235,0.08), transparent 60%),
+    radial-gradient(ellipse 700px 700px at 10% 90%, rgba(37,99,235,0.06), transparent 60%),
+    /* Wave layers - right side curves */
+    radial-gradient(ellipse 2000px 1200px at 85% 30%, rgba(237,239,245,0.15), transparent 70%),
+    radial-gradient(ellipse 1800px 1000px at 82% 35%, rgba(229,231,235,0.12), transparent 65%),
+    /* Bottom-left curve */
+    radial-gradient(ellipse 1600px 900px at 15% 75%, rgba(237,239,245,0.1), transparent 60%),
+    /* Center highlight */
+    radial-gradient(ellipse 1536px 864px at 50% 50%, rgba(255,255,255,0.3), transparent 70%),
+    /* Base */
+    #FAFAFB;
+}
+
+/* For better performance, use CSS background on smaller screens */
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+

@@ -48,15 +48,34 @@ html{
   }
 
   body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-  background:
-    radial-gradient(900px 500px at 10% 0%, rgba(37,99,235,.10), transparent 55%),
-    radial-gradient(900px 500px at 90% 10%, rgba(37,99,235,.06), transparent 60%),
-    var(--bg);
-  color:var(--ink);
-  line-height:1.7;
-}
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--bg);
+    color:var(--ink);
+    line-height:1.7;
+  }
+  
+  /* Fallback for browsers that don't support SVG backgrounds */
+  @supports not (background-image: url('background.svg')) {
+    body {
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(37,99,235,.10), transparent 55%),
+        radial-gradient(900px 500px at 90% 10%, rgba(37,99,235,.06), transparent 60%),
+        var(--bg);
+    }
+  }
+  
+  /* Mobile: use scroll instead of fixed for performance */
+  @media (max-width: 1024px) {
+    body {
+      background-attachment: scroll;
+    }
+  }
 
 @media (prefers-reduced-motion: reduce){
   html{
